@@ -1,0 +1,11 @@
+
+train: /content/drive/MyDrive/5.2/FYP/Kales/images/train
+
+
+val: /content/drive/MyDrive/5.2/FYP/Kales/images/val
+
+#number of classes
+nc: 3
+#class names
+names:
+  ["Healthy","Black Rot Disease","Other"]
