@@ -4,7 +4,7 @@ output/
 raw/
 resized/
 output/
-16output_image.jpg/
-best_float16.tflite/
-best.float32.tflite/
-best.pt/
+16output_image.jpg
+best_float16.tflite
+best.float32.tflite
+best.pt
