@@ -4,6 +4,7 @@ output/
 raw/
 resized/
 output/
+detections/
 16output_image.jpg
 best_float16.tflite
 best_float32.tflite
