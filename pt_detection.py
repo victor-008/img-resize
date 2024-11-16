@@ -2,12 +2,11 @@ import cv2
 import numpy as np
 from ultralytics import YOLO
 
-# Load the YOLOv8 model
+# Loadmodel
 model = YOLO('V:/coding/dev/Python/Gantry/FYP/best.pt')
 
 # Function to perform detection on an image
 def detect_image(image_path, output_path):
-    # Load the image
     image = cv2.imread(image_path)
     if image is None:
         raise FileNotFoundError(f"Image not found at path: {image_path}")
@@ -34,8 +33,6 @@ def detect_image(image_path, output_path):
     cv2.imwrite(output_path, image)
     print(f"Output image saved at: {output_path}")
 
-
-# Example usage
 input_image_path = 'V:/coding/dev/Python/Gantry/FYP/raw/resized/20241006_173537.jpg'
 output_image_path = 'V:/coding/dev/Python/Gantry/FYP/output/20241006_173537_detected.jpg'
 detect_image(input_image_path, output_image_path)

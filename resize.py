@@ -6,7 +6,7 @@ from tqdm import tqdm
 import psutil
 
 # Resize dimensions
-target_size = (640, 640)
+target_size = (640, 640) # width, height
 
 #monitor system performance
 def monitor_performance(interval = 10):
@@ -37,8 +37,6 @@ for filename in tqdm(image_files, desc="Progress", unit="image", colour="green")
             # Open image
             img_path = os.path.join(input_folder, filename)
             img = Image.open(img_path)
-
-            #Resize image using Image.Resampling.LANCZOS instead of Image.ANTIALIAS
             img_resized = img.resize(target_size, Image.Resampling.LANCZOS) 
 
             # Save resized image to output folder
